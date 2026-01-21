@@ -25,7 +25,7 @@ const App = () => (
             <Toaster />
             <Sonner />
             <CalendlyModal />
-            <BrowserRouter>
+            <BrowserRouter basename="/codewithchris">
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />

@@ -47,7 +47,7 @@ const HeroSection = () => {
               className="mb-10"
             >
               <img
-                src="/hero.jpg"
+                src={`${import.meta.env.BASE_URL}hero.jpg`}
                 alt={t(
                   'Course benefits: Master Practical AI, Build Real Products, Develop a Portfolio, Small Group Learning',
                   '课程优势：掌握实用AI、构建真实产品、打造作品集、小班教学'

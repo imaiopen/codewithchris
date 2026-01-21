@@ -275,7 +275,7 @@ const Contact = () => {
                   </h3>
                   <div className="w-44 h-44 mx-auto bg-white rounded-xl p-2 overflow-hidden shadow-sm">
                     <img
-                      src="/wechat.jpg"
+                      src={`${import.meta.env.BASE_URL}wechat.jpg`}
                       alt={t('WeChat QR Code - Scan to add Chris AI Lab', '微信二维码 - 扫码添加Chris AI实验室')}
                       className="w-full h-full object-cover rounded-lg"
                     />

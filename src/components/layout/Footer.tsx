@@ -35,9 +35,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="CHRIS AI LAB" className="w-10 h-10" />
               <span className="font-bold text-xl tracking-wide">CHRIS <span className="text-secondary">AI LAB</span></span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
@@ -108,7 +106,7 @@ const Footer = () => {
               <p className="text-sm text-white/70 mb-2">{t('WeChat:', '微信：')}</p>
               <div className="w-28 h-28 bg-white rounded-lg p-1.5 overflow-hidden">
                 <img
-                  src="/wechat.jpg"
+                  src={`${import.meta.env.BASE_URL}wechat.jpg`}
                   alt={t('Scan to add on WeChat', '扫码添加微信')}
                   className="w-full h-full object-cover rounded"
                 />

@@ -78,9 +78,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="CHRIS AI LAB" className="w-10 h-10" />
             <span className="font-bold text-lg text-foreground hidden sm:block tracking-wide">CHRIS <span className="text-secondary">AI LAB</span></span>
           </Link>
 

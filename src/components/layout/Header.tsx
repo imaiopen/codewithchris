@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useCalendly } from '@/contexts/CalendlyContext';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Button } from '@/components/ui/button';
+import logoImage from '@/assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -78,7 +79,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
-            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="CHRIS AI LAB" className="w-10 h-10" />
+            <img src={logoImage} alt="CHRIS AI LAB" className="w-10 h-10" />
             <span className="font-bold text-lg text-foreground hidden sm:block tracking-wide">CHRIS <span className="text-secondary">AI LAB</span></span>
           </Link>
 

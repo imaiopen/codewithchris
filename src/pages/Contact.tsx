@@ -8,6 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useCalendly } from '@/contexts/CalendlyContext';
 import { Button } from '@/components/ui/button';
 import { z } from 'zod';
+import wechatImage from '@/assets/wechat.jpg';
 
 const CALENDLY_URL = 'https://calendly.com/your-username/30min';
 
@@ -275,7 +276,7 @@ const Contact = () => {
                   </h3>
                   <div className="w-44 h-44 mx-auto bg-white rounded-xl p-2 overflow-hidden shadow-sm">
                     <img
-                      src={`${import.meta.env.BASE_URL}wechat.jpg`}
+                      src={wechatImage}
                       alt={t('WeChat QR Code - Scan to add Chris AI Lab', '微信二维码 - 扫码添加Chris AI实验室')}
                       className="w-full h-full object-cover rounded-lg"
                     />

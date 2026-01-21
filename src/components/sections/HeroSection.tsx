@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-teaching.jpg';
+import benefitsImage from '@/assets/hero.jpg';
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -47,7 +48,7 @@ const HeroSection = () => {
               className="mb-10"
             >
               <img
-                src={`${import.meta.env.BASE_URL}hero.jpg`}
+                src={benefitsImage}
                 alt={t(
                   'Course benefits: Master Practical AI, Build Real Products, Develop a Portfolio, Small Group Learning',
                   '课程优势：掌握实用AI、构建真实产品、打造作品集、小班教学'

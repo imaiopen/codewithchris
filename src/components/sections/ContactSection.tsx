@@ -108,7 +108,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-xl mx-auto"
         >
-          <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-card">
+          <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-8 shadow-card">
             <div className="space-y-6">
               {/* Name */}
               <div>

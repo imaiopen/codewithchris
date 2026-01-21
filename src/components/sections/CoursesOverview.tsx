@@ -85,7 +85,7 @@ const CoursesOverview = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-              className="bg-white rounded-[4px] border border-border p-6 shadow-sm hover:shadow-md transition-all duration-300"
+              className="bg-card rounded-[4px] border border-border p-6 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <div className="text-4xl mb-4">{course.emoji}</div>
               <h3 className="text-lg font-bold text-foreground mb-2">

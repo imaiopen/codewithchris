@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-card relative"
+              className="bg-card rounded-2xl p-8 shadow-card relative"
             >
               <Quote className="absolute top-6 right-6 w-10 h-10 text-primary/10" />
               

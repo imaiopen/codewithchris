@@ -163,7 +163,7 @@ const Courses = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-                  className="bg-white rounded-[4px] border border-border p-6 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="bg-card rounded-[4px] border border-border p-6 shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <span className="text-4xl">{course.emoji}</span>
@@ -256,7 +256,7 @@ const Courses = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={pricingInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  className={`bg-white rounded-xl p-8 shadow-card border-l-4 ${
+                  className={`bg-card rounded-xl p-8 shadow-card border-l-4 ${
                     option.accent === 'secondary' ? 'border-secondary' : 'border-primary'
                   }`}
                 >
@@ -292,7 +292,7 @@ const Courses = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={pricingInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-white rounded-2xl p-8 max-w-3xl mx-auto shadow-card"
+              className="bg-card rounded-2xl p-8 max-w-3xl mx-auto shadow-card"
             >
               <div className="grid sm:grid-cols-2 gap-4">
                 {scheduleDetails.map((detail, index) => (
@@ -311,7 +311,7 @@ const Courses = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={pricingInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="bg-white rounded-2xl p-8 shadow-card"
+                className="bg-card rounded-2xl p-8 shadow-card"
               >
                 <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
                   <UserCheck className="w-7 h-7 text-primary" />
@@ -408,7 +408,7 @@ const Courses = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={pricingInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="bg-white rounded-2xl p-8 shadow-card"
+                className="bg-card rounded-2xl p-8 shadow-card"
               >
                 <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
                   <BookOpen className="w-7 h-7 text-secondary" />
@@ -514,7 +514,7 @@ const Courses = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={pricingInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="mt-12 bg-white rounded-2xl p-8 shadow-card max-w-4xl mx-auto"
+              className="mt-12 bg-card rounded-2xl p-8 shadow-card max-w-4xl mx-auto"
             >
               <h3 className="text-2xl font-bold text-foreground mb-6 text-center flex items-center justify-center gap-3">
                 <Target className="w-7 h-7 text-secondary" />

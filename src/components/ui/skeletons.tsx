@@ -5,7 +5,7 @@ import { Skeleton } from "./skeleton";
  */
 export function CourseCardSkeleton() {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)]">
+    <div className="bg-card rounded-2xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)]">
       {/* Gradient top border placeholder */}
       <Skeleton className="h-1.5 w-full rounded-none" />
 
@@ -118,7 +118,7 @@ export function HeroSectionSkeleton() {
           <div className="relative">
             <Skeleton className="aspect-[4/3] w-full rounded-2xl" />
             {/* Floating card skeleton */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-xl hidden md:block">
+            <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-4 shadow-xl hidden md:block">
               <div className="flex items-center gap-3">
                 <Skeleton className="w-12 h-12 rounded-full" />
                 <div>
@@ -148,7 +148,7 @@ export function FAQSkeleton() {
 
         <div className="max-w-3xl mx-auto space-y-4">
           {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="bg-white rounded-xl p-5">
+            <div key={i} className="bg-card rounded-xl p-5">
               <Skeleton className="h-6 w-4/5" />
             </div>
           ))}

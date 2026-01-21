@@ -119,7 +119,7 @@ const FAQ = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.05 + index * 0.03 }}
-                  className="bg-white rounded-xl shadow-card overflow-hidden"
+                  className="bg-card rounded-xl shadow-card overflow-hidden"
                 >
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}

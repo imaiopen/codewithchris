@@ -91,7 +91,7 @@ const About = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={contentInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-                    className="bg-white rounded-xl p-6 shadow-card"
+                    className="bg-card rounded-xl p-6 shadow-card"
                   >
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-2xl">{section.emoji}</span>
@@ -127,7 +127,7 @@ const About = () => {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2.5 bg-white rounded-xl shadow-card hover:shadow-lg transition-shadow"
+                    className="flex items-center gap-2 px-5 py-2.5 bg-card rounded-xl shadow-card hover:shadow-lg transition-shadow"
                   >
                     <Linkedin className="w-5 h-5 text-primary" />
                     <span className="font-medium text-foreground">LinkedIn</span>
@@ -136,7 +136,7 @@ const About = () => {
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2.5 bg-white rounded-xl shadow-card hover:shadow-lg transition-shadow"
+                    className="flex items-center gap-2 px-5 py-2.5 bg-card rounded-xl shadow-card hover:shadow-lg transition-shadow"
                   >
                     <Github className="w-5 h-5 text-foreground" />
                     <span className="font-medium text-foreground">GitHub</span>

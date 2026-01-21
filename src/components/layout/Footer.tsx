@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-white py-16">
+    <footer className="bg-[#1a1a1a] text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* About */}

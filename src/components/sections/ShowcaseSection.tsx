@@ -77,13 +77,13 @@ const ShowcaseSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.05 }}
-              className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group"
+              className="bg-card rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group"
             >
               {/* Image Placeholder */}
               <div className={`aspect-video bg-gradient-to-br ${project.bgGradient} flex items-center justify-center p-6`}>
-                <div className="w-full h-full rounded-lg bg-white/60 backdrop-blur-sm shadow-inner flex items-center justify-center">
+                <div className="w-full h-full rounded-lg bg-card/60 backdrop-blur-sm shadow-inner flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-white shadow-sm flex items-center justify-center">
+                    <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-card shadow-sm flex items-center justify-center">
                       <span className="text-2xl">
                         {index === 0 && '🌐'}
                         {index === 1 && '💬'}

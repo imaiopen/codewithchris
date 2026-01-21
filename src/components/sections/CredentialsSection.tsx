@@ -69,7 +69,7 @@ const CredentialsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-card"
+              className="bg-card rounded-2xl p-8 shadow-card"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="icon-container-lg">
@@ -100,7 +100,7 @@ const CredentialsSection = () => {
             <a
               key={index}
               href={link.href}
-              className="flex items-center gap-2 px-6 py-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all text-foreground-secondary hover:text-primary"
+              className="flex items-center gap-2 px-6 py-3 bg-card rounded-xl shadow-sm hover:shadow-md transition-all text-foreground-secondary hover:text-primary"
             >
               <link.icon className="w-5 h-5" />
               <span className="font-medium">{link.label}</span>

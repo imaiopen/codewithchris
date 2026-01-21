@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Rocket, Target, Users, Award } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-teaching.jpg';
@@ -8,13 +7,6 @@ import heroImage from '@/assets/hero-teaching.jpg';
 const HeroSection = () => {
   const { t } = useLanguage();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-
-  const advantages = [
-    { icon: Rocket, text: t('Build Real AI Projects', '构建真实AI项目') },
-    { icon: Target, text: t('Stand Out for University', '大学申请脱颖而出') },
-    { icon: Users, text: t('1-on-1 & Small Group Classes', '一对一及小班授课') },
-    { icon: Award, text: t('Portfolio You Can Show Off', '可展示的作品集') },
-  ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -41,41 +33,29 @@ const HeroSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <span className="eyebrow mb-4 block">
-              {t('AI Education in Shanghai', '上海AI教育')}
-            </span>
-            
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center lg:text-left">
               <span className="text-gradient">
                 {t('Learn and Experiment with AI', '学习并探索AI')}
               </span>
             </h1>
-            
-            <p className="text-body mb-8 max-w-xl font-medium text-lg">
-              {t(
-                'Master practical AI skills that set you apart. Build real projects, gain hands-on experience, and create a portfolio that impresses universities and future employers.',
-                '掌握让你脱颖而出的实用AI技能。构建真实项目，获得实践经验，创建令大学和未来雇主印象深刻的作品集。'
-              )}
-            </p>
 
-            {/* Advantages */}
-            <div className="grid grid-cols-2 gap-4 mb-10">
-              {advantages.map((badge, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  className="flex items-center gap-3"
-                >
-                  <div className="w-5 h-5 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                    <badge.icon className="w-3 h-3 text-white" />
-                  </div>
-                  <span className="text-sm text-foreground-secondary">{badge.text}</span>
-                </motion.div>
-              ))}
-            </div>
-            
+            {/* Benefits Image */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mb-10"
+            >
+              <img
+                src="/hero.jpg"
+                alt={t(
+                  'Course benefits: Master Practical AI, Build Real Products, Develop a Portfolio, Small Group Learning',
+                  '课程优势：掌握实用AI、构建真实产品、打造作品集、小班教学'
+                )}
+                className="w-full max-w-lg rounded-xl"
+              />
+            </motion.div>
+
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4" role="group" aria-label={t('Primary actions', '主要操作')}>
               <motion.div

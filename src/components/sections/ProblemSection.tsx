@@ -84,13 +84,9 @@ const ProblemSection = () => {
         >
           <p className="text-xl md:text-2xl text-foreground leading-relaxed">
             {t(
-              'What if your student could learn AI from someone actually working in the field—and build ',
-              '如果你的孩子能跟随一位真正在AI领域工作的专家学习——并构建'
+              'Learn AI from experts in the field and build ',
+              '跟随AI领域的专家学习并构建真正有价值的项目'
             )}
-            <span className="text-gradient font-semibold">
-              {t('real projects that matter', '真正有价值的项目')}
-            </span>
-            {t('?', '呢？')}
           </p>
         </motion.div>
       </div>

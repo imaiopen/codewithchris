@@ -521,46 +521,23 @@ const Courses = () => {
                 {t('Ideal Student Profile', '理想学生画像')}
               </h3>
 
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Perfect For */}
-                <div>
-                  <h4 className="font-semibold text-foreground mb-4 text-sm uppercase tracking-wide text-green-600">
-                    {t('Perfect For', '非常适合')}
-                  </h4>
-                  <div className="space-y-3">
-                    {[
-                      t('Students curious about how AI actually works', '对AI实际工作原理感到好奇的学生'),
-                      t('Kids who like building and creating things', '喜欢建造和创造东西的孩子'),
-                      t('Those preparing for university CS/Engineering programs', '准备大学计算机/工程专业的学生'),
-                      t('Students who want practical skills, not just theory', '想要实用技能而不仅仅是理论的学生'),
-                      t('Anyone who wants to stand out in university applications', '任何想在大学申请中脱颖而出的人'),
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-foreground-secondary text-sm">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Not Ideal For */}
-                <div>
-                  <h4 className="font-semibold text-foreground mb-4 text-sm uppercase tracking-wide text-red-500">
-                    {t('Not Ideal For', '不太适合')}
-                  </h4>
-                  <div className="space-y-3">
-                    {[
-                      t('Students who just want easy homework help', '只想要简单作业帮助的学生'),
-                      t('Those expecting to become AI experts in 10 weeks', '期望在10周内成为AI专家的人'),
-                      t('Kids with no interest in technology', '对技术没有兴趣的孩子'),
-                      t('Students unable to commit to the full schedule', '无法承诺完整时间安排的学生'),
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <X className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                        <span className="text-foreground-secondary text-sm">{item}</span>
-                      </div>
-                    ))}
-                  </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-4 text-sm uppercase tracking-wide text-green-600">
+                  {t('Perfect For', '非常适合')}
+                </h4>
+                <div className="grid md:grid-cols-2 gap-x-8 gap-y-3">
+                  {[
+                    t('Students curious about how AI actually works', '对AI实际工作原理感到好奇的学生'),
+                    t('Students who like building and creating things', '喜欢建造和创造东西的学生'),
+                    t('Those preparing for university CS/Engineering programs', '准备大学计算机/工程专业的学生'),
+                    t('Students who want practical skills and theory', '想要实用技能和理论的学生'),
+                    t('Anyone who wants to stand out in university applications', '任何想在大学申请中脱颖而出的人'),
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground-secondary text-sm">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </motion.div>
